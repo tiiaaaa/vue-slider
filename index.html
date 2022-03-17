@@ -33,8 +33,10 @@
 
                 <div class="col-12 p-5">
                     <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
-                        <div class="my-carousel-images">
+                        <div class="my-carousel-images" v-for="element in slider">
                             <!-- immagini -->
+                            <img class="my-carousel-picture" v-bind:src="slider.url" v-bind:alt="slider.title">
+                            
                         </div>
                         <div class="my-thumbnails position-relative">
                             <!-- prev -->
