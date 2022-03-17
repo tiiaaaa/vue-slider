@@ -32,6 +32,7 @@ div.my-carousel.active{
 div.my-thumbnails{
     background-color: violet;
     min-height: 160px;
+    display: flex;
 }
 
 div.my-thumbnail{

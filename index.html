@@ -33,10 +33,15 @@
 
                 <div class="col-12 p-5">
                     <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
-                        <div class="my-carousel-images" v-for="element in slider">
+                        <div class="my-carousel-images">
                             <!-- immagini -->
-                            <img class="my-carousel-picture" v-bind:src="slider.url" v-bind:alt="slider.title">
-                            
+                            <div class="my-carousel" v-for="(element, index) in slides">
+                                <img class="my-carousel-picture" v-bind:src="element.url" v-bind:alt="element.title">
+                                <div class="my-carousel-description position-absolute bottom-0 end-0 text-end text-white">
+                                    <h2>{{element.title}}</h2>
+                                    <p>{{element.text}}</p>
+                                </div>
+                            </div>                            
                         </div>
                         <div class="my-thumbnails position-relative">
                             <!-- prev -->
@@ -44,6 +49,9 @@
                                 <span class="my-prev-hook"></span>
                             </div>
                             <!-- immagini interne -->
+                            <div class="my-thumbnail" v-for="thumbnail in slides">
+                                <img class="my-thumbnail-img" v-bind:src="thumbnail.url" v-bind:alt="thumbnail.title">
+                            </div>
                             <!-- next -->
                             <div class="my-next position-absolute">
                                 <span class="my-next-hook"></span>

@@ -2,7 +2,7 @@ const root = new Vue({
     
     el: "#root",
     data: {
-        slider : [
+        slides : [
 
             {
                 url:'https://www.mlaworld.com/wp-content/uploads/2019/09/toronto-2.jpg',
