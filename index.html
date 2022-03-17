@@ -21,11 +21,40 @@
     
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Vue Slider</title>
 </head>
 <body>
     <main id="root">
+        <div class="container-fluid p-5">
+            <div class="row text-center">
+                <div class="col-12 p-3" id="my-before-carousel">
 
+                </div>
+
+                <div class="col-12 p-5">
+                    <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
+                        <div class="my-carousel-images">
+                            <!-- immagini -->
+                        </div>
+                        <div class="my-thumbnails position-relative">
+                            <!-- prev -->
+                            <div class="my-previous position-absolute">
+                                <span class="my-prev-hook"></span>
+                            </div>
+                            <!-- immagini interne -->
+                            <!-- next -->
+                            <div class="my-next position-absolute">
+                                <span class="my-next-hook"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 p-3" id="my-after-carousel">
+
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Link al JS -->
